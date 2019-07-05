@@ -12,3 +12,4 @@ if __name__ == "__main__":
     a=[int(x) for x in a]
     print(selection_sort(a))
 
+Jonathan - CPA Beyond
