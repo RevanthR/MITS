@@ -1,7 +1,14 @@
-import re
-str1="Write a program to calculate the frequency of words present in a given sentence. Display the output in such a way that the keys are in sorted order where every key and value is separated by “->” symbol?"
-x=re.findall('\w+',str1)
-x=set(x)
+l1=input()
+l2=input()
+l1=[x for x in l1]
+print(l1)
 
-for a in x:
-    print(a,str1.count(a))
+l2=[x for x in l2]
+print(l2)
+l3=[]
+if len(l1)==len(l2):
+    for i in range(len(l1)):
+        l3.append(int(l1[i]+l2[-(i+1)]))
+    print(l3)
+else:
+    print("String Length is not equal")
