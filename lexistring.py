@@ -1,0 +1,11 @@
+import re
+str1=input()
+str2=input()
+str2=list(str2)
+str2.insert(0,'[')
+str2.append(']')
+str2=''.join(str2)
+a=re.compile(str2)
+print(a)
+mo=a.findall(str1)
+print(mo)
